@@ -1,0 +1,383 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial, sans-serif';
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Header.css */
+header {
+  background-color: #000000;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  z-index: 999;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+}
+
+header 
+.log {
+    width: 99px;
+    height: auto;
+    
+}
+
+
+.list a {
+  text-decoration: none;
+  color: #5dba4d;
+  font-Size: 1.3em;
+  font-weight: 500;
+  padding: 0 30px;
+  position: relative;
+}
+
+.list a:hover {
+  color: #c7cb50;
+}
+
+.list a:hover::after {
+  content: "";
+  height: 2px;
+  width: 30%;
+  background-color: #c2c04d;
+  position: absolute;
+  left: 25px;
+  bottom: -4px;
+}
+
+
+
+/* Main.css */
+
+.main{
+  display: flex;
+  justify-content: center; /* Horizontal alignment */
+ align-items: center; /* Vertical alignment */
+ 
+}
+.main {
+    min-height: 100vh;
+    display: flex;
+    background: url('./image/cover2.png') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .present {
+    display: inline-block;
+    margin-bottom: 0px;
+    color: #FFBD59;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+  
+  .parg {
+    color: #f8f9fa;
+    width: 800px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    line-height: 1.5em; 
+    
+
+  }
+  
+  .bottun {
+    color: #0c0c0c;
+    text-decoration: none;
+    background-color: #5DBA4D;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 0.7em 1em;
+    font-size: 1.5em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 65px;
+    margin-left: 220px;
+    transition: 0.5s ease;
+  }
+  
+  .bottun:hover {
+    background-color: #FFBD59;
+    transform: scale(1.1);
+  }
+  
+  .icons a {
+    color: #19d400;
+    font-size: 1.7em;
+  
+  }
+  
+  @media (max-width: 1000px) {
+    .present {
+      font-size: 1.4em;
+      padding-top: 5px;
+    }
+    .main {
+      min-height: 100vh;
+      display: flex;
+      background: url('./image/cover2.png') no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .parg {
+      font-size: 1.3em;
+      width: 15em;
+    }
+  }
+  
+/* Services.css */
+
+
+
+.cards{
+  background-color: #000000;
+}
+
+
+.title{
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  font-weight: 900;
+  color: #5dba4d;
+  margin-bottom: 30px;
+  letter-spacing:2px ;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.card:hover{
+ transform: scale(1.1);
+ 
+ 
+}
+
+
+  .card {
+    background-color: #000000;
+    width: 21.25em;
+    padding: 25px;
+    margin: 40px;
+    box-shadow: 0px 3px 26px  rgb(141, 141, 141);
+    border-radius: 10px;
+    transition: 0.6S ease;
+   
+
+}
+
+
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+
+div .icon{
+  color: #5DBA4D;
+  font-Size: 11em;
+  text-align: center;
+}
+.info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #FFBD59;
+  text-align: center;
+}
+
+.info p {
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* for form */
+
+.contacts {
+  background: url('./image/cover4.png') no-repeat center center;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.contacts1 {
+ 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+.contact-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+/* General styles for the contact section */
+.contacts {
+
+  font-family: Arial, sans-serif;
+}
+
+/* Title styles */
+.title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #5DBA4D;
+ 
+}
+
+/* Container styles */
+.contacts1 .container {
+  max-width: 600px;
+  margin: 100px auto;
+  background-color: #000000;
+  padding: 30px;
+  box-shadow: 0 2px 30px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* Form input and textarea styles */
+.contact-input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+  background-color: #45a049;
+  
+}
+
+/* Label styles */
+label {
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+  display: block;
+}
+ 
+
+.footer {
+background-color: #000000;
+color: #ccc;
+padding: 1em;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer img {
+  width: 70px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media  (max-width: 1000px) {
+  .list a {
+      
+      font-size:0.9em ;
+      padding:0 3px;
+      
+  }
+  .logo{
+      width: 60px;
+      height: auto;
+      
+  }
+
+header {
+  padding: 0px 5px;
+  
+  justify-content: space-between;
+
+}
+
+  section   {  
+      
+          padding: 80px 50px 0px 10px;
+          
+          
+   
+  }
+
+  section .present {
+      font-size:1.4em;
+      padding-top: 5px;
+  }
+
+  section .parg{
+      font-size: 1.3em;
+      width: 15em;
+  }
+
+  section .contacts1{
+
+     
+      flex-direction: column;
+  }
+  .card {
+      
+      width: 15.25em;
+      padding: 15px;
+      margin: 20px;
+     
+  }
+  .container {
+     
+      padding: 20px;
+      width: 90%;
+      
+      margin-bottom: 12px;
+    }
+
+    footer{
+      
+      font-size: 12px;
+     
+  }
+  
+  }
+  
