@@ -13,7 +13,7 @@ function Services() {
                     </div>
                     <div className="info">
                         <h3>backend development</h3>
-                        <p>Your creative partner in crafting captivating graphic designs that elevate your brand.</p>
+                        <p>Backend development: Building the core functionality and logic that powers websites and applications behind the scenes.</p>
                     </div>
                 </div>
                 <div className="card">
