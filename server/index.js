@@ -1,8 +1,11 @@
 require('dotenv').config();
+console.log('Current working directory:', process.cwd());
+console.log('__dirname:', __dirname);
+console.log('Environment variables:', process.env);
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 5006;
@@ -20,12 +23,12 @@ app.get('/', (req, res) => {
 });
 
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
     .then(() => console.log('MongoDB connected'))
-    .catch(err => console.log(err));
+    .catch(err => console.log('MongoDB connection error:', err));
 
 // Start the server
 app.listen(PORT, () => {
