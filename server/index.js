@@ -24,8 +24,7 @@ app.get('/', (req, res) => {
 
 // MongoDB connection
 mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    // useNewUrlParser and useUnifiedTopology are not required in the latest versions
 })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log('MongoDB connection error:', err));
@@ -34,3 +33,4 @@ mongoose.connect(process.env.MONGODB_URI, {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
