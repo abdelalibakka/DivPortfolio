@@ -62,15 +62,13 @@ header
   display: flex;
   justify-content: center; /* Horizontal alignment */
  align-items: center; /* Vertical alignment */
- 
-}
-.main {
-    min-height: 100vh;
+ min-height: 100vh;
     display: flex;
     background: url('./image/cover2.png') no-repeat;
     background-size: cover;
     background-attachment: fixed;
-  }
+}
+
   
   .present {
     display: inline-block;
@@ -105,17 +103,27 @@ header
     margin-left: 220px;
     transition: 0.5s ease;
   }
-  
   .bottun:hover {
     background-color: #FFBD59;
     transform: scale(1.1);
   }
-  
-  .icons a {
-    color: #19d400;
-    font-size: 1.7em;
-  
+  .icon1 
+  {
+    color: #f0f0f0;
+    transition: color 0.3s ease;
+    margin-left:17em;
+    margin-top: 1em;
   }
+  a .firsticon{
+    margin-right: 0.5em; 
+    color: #f0f0f0;
+   }
+   a .secondicon{
+    margin-right: 0.5em; 
+    color: #f0f0f0;
+   }
+  
+
   
   @media (max-width: 1000px) {
     .present {
@@ -183,7 +191,7 @@ header
 
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-15px);
 }
 
 
@@ -204,6 +212,15 @@ div .icon{
   color: rgb(255, 255, 255);
   line-height: 1.6;
   text-align: center;
+}
+.link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #5dba4d;
+  
+}
+.link:hover{
+  color: #619361;
 }
 
 /* for form */
@@ -381,3 +398,44 @@ header {
   
   }
   
+  .Frontend{
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    min-height: 100vh;
+    display: flex;
+    background: url('./image/cover5.png') no-repeat;
+    background-size: cover;
+    
+
+  }
+  .titlefront{
+    display: inline-block;
+  margin-bottom: 0px;
+  color: #2b2a2a;
+  font-size: 3.5em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  letter-spacing: 3px;
+  }
+
+
+.Frontback{
+  display: flex;
+  justify-content: center; /* Horizontal alignment */
+  min-height: 100vh;
+  display: flex;
+  background: url('./image/cover6.png') no-repeat;
+  background-size: cover;
+  
+
+}
+.titleback{
+  display: inline-block;
+  margin-bottom: 0px;
+  color: #2b2a2a;
+  font-size: 3.5em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  letter-spacing: 3px;
+}
+
