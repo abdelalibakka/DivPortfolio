@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Header() {
+ function Header() {
     const handleLogoClick = (e) => {
         e.preventDefault();
         window.location.reload();
