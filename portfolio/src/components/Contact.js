@@ -2,7 +2,24 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 
+const Contact = () => {
+  const form = useRef();
 
+  console.log('Contact component is being rendered'); // Debugging line
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_aylkmph', 'template_jlqzn8r', form.current, '5F8Zb4CQcthxtsdk7')
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        }
+      );
+    e.target.reset();
+  };
 
   return (
     <section className="contacts" id="contact">
