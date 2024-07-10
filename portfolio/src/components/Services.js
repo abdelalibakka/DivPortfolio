@@ -1,16 +1,24 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import CodeOffIcon from '@mui/icons-material/CodeOff';
 import CodeIcon from '@mui/icons-material/Code';
+import './Style.css';
 
 function Services() {
+    const navigate = useNavigate();
+
+    const handleOpenContact = () => {
+        navigate('/header-contact-footer');
+    };
+
     return (
         <section className="cards" id="OurServices">
             <h2 className="title">Our Services</h2>
             <div className="content">
                 <div className="card">
                     <div className="icon">
-                        <CodeIcon  style={{ fontSize: "1em" }}/>
+                        <CodeIcon style={{ fontSize: "1em" }}/>
                     </div>
                     <div className="info">
                         <h3>Backend Development</h3>
@@ -25,13 +33,13 @@ function Services() {
                     <div className="info">
                         <h3>Frontend Development</h3>
                         <p>Frontend development focuses on creating the visual and interactive aspects of a website or web application, directly engaging with users.</p>
-                        <Link  to="/frontend-development" className='link' >Learn More</Link>
+                         <Link  to="/frontend-development" className='link' >Learn More</Link>
                     </div>
                 </div>
             </div>
+            <button onClick={handleOpenContact} className="button">Contact Us</button>
         </section>
     );
 }
 
 export default Services;
-
