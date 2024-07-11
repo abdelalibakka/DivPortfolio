@@ -77,7 +77,7 @@ function FrontendDevelopment() {
                     <li key={tutorial.id}>
                         <h2>{tutorial.name}</h2>
                         <img src={tutorial.image} alt={tutorial.name} style={{ maxWidth: '100%', height: 'auto' }} />
-                        <p>{tutorial.description}</p>
+                        <p className='paragraph'>{tutorial.description}</p>
                     </li>
                 ))}
             </ul>
