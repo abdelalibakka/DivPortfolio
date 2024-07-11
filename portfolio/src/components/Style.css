@@ -147,10 +147,10 @@ header
   letter-spacing:2px ;
 }
 .content{
-  display: flex;
   justify-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap;display: flex;
+  
 }
 
 
