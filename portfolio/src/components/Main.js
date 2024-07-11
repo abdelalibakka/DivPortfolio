@@ -18,7 +18,7 @@ const Main = () => {
         </h2>
         
         <div className="icon1">
-          <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/abdelalibakka" target="_blank" rel="noopener noreferrer">
             <GitHubIcon className="firsticon" style={{ fontSize: "2em" }} />
           </a>
           <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener noreferrer">
