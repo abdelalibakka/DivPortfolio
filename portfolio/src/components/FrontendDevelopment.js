@@ -45,12 +45,7 @@ function FrontendDevelopment() {
 
                 // Mocking data locally in case of an error
                 const localData = [
-                    {
-                        id: "1",
-                        name: "Introduction to HTML",
-                        description: "Learn the basics of HTML and its importance in web development.",
-                        image: logo // Using local logo image
-                    },
+                   
                     {
                         id: "2",
                         name: "CSS Styling Techniques",

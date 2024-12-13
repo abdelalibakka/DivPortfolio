@@ -5,9 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Main = () => {
-  const handleOpenContact = () => {
-    window.open('/contact', '_blank');
-  };
+  
 
   return (
     <section className="main">

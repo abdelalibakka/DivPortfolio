@@ -8,9 +8,9 @@ import React from 'react';
 
     return (
         <header>
-            <a href="#" className="logo" id="log" onClick={handleLogoClick}>
+            <div className="logo" id="log" onClick={handleLogoClick}>
                 <img src={require('./image/logo.png')} alt="Logo" className="log" id="log" />
-            </a>
+            </div>
             <nav className="list">
                 <a href="#OurServices">Our Services</a>
                 <a href="#projects">Projects</a>
